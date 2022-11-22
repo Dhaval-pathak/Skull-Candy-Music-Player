@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.github.anrimian.musicplayer.data">
+
+    <application android:allowBackup="false"/>
+
+    <queries>
+        <!-- External eq -->
+        <intent>
+            <action android:name="android.media.action.DISPLAY_AUDIO_EFFECT_CONTROL_PANEL" />
+        </intent>
+    </queries>
+
+</manifest>

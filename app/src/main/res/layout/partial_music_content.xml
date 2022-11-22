@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_music_panel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.anrimian.musicplayer.ui.utils.fragments.navigation.JugglerView
+        android:id="@+id/drawer_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/bottom_sheet_height"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/cl_play_queue_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/bound_with_bottom_sheet_behavior">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vpPlayContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <include layout="@layout/partial_bottom_sheet_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/ml_bottom_sheet"/>
+
+    <include layout="@layout/partial_detailed_music"
+        android:id="@+id/ml_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_sheet_expand_height"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="@dimen/bottom_sheet_height"
+        app:layout_behavior="@string/bottom_sheet_behavior"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

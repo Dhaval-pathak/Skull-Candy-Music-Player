@@ -1,0 +1,129 @@
+allprojects {
+    repositories {
+        //at least exoplayer is still here
+        jcenter()
+        maven { url "https://maven.google.com" }
+        maven { url 'https://jitpack.io' }
+        google()
+    }
+}
+
+ext {
+    //Android
+    androidBuildToolsVersion = "33.0.0"
+    androidMinSdkVersion = 21
+    androidTargetSdkVersion = 33
+    androidCompileSdkVersion = 33
+
+    //support libraries
+    androidXVersion = "1.5.0"
+    googleMaterialVersion = "1.6.1"
+    recyclerViewVersion = "1.2.1"
+    recyclerViewFastScrollVersion = "1.1.8"
+    mediaCompatVersion = "1.6.0"
+
+    constraintLayoutVersion = "2.1.4"
+    rxJavaVersion = "3.1.5"
+    rxAndroidVersion = "3.0.0"
+    rxPermissionsVersion = "0.12"
+    rxJavaExtVersion = "3.1.1"
+    moxyVersion = "2.2.2"
+    daggerVersion = "2.43.2"
+    slidrVersion = "2.1.0"
+    exoPlayerVersion = "2.18.1"
+    roomVersion = "2.4.3"
+    jTaggerVersion = '2.2.6c'
+    chipsLayoutManagerVersion = "0.3.7"
+    glideVersion = "4.13.2"
+    workManagerVersion = "2.7.1"
+
+    //remote repos libraries
+    dropboxSdkVersion = "5.3.0"
+    playServicesAuthVersion = "20.2.0"
+    googleApiVersion = "2.0.0"
+    gDriveVersion = "v3-rev20220214-1.32.1"
+
+    //Testing
+    jUnit5Version = '5.9.0'
+    jUnit5PluginVersion = '1.3.0'
+    espressoVersion = '3.3.0'
+    mockitoVersion = '4.7.0'
+    mockitoKtVersion = '4.0.0'
+    dexmakerVersion = '2.28.1'
+    androidXTestVersion = "1.4.0"
+
+    //developing
+    javaxAnnotationVersion = "3.0.2"
+}
+
+ext {
+    kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+
+    appCompat = "androidx.appcompat:appcompat:$androidXVersion"
+    appCompatResources = "androidx.appcompat:appcompat-resources:$androidXVersion"
+    //in recent version added +200kb, candidate for optimization
+    material = "com.google.android.material:material:$googleMaterialVersion"
+    recyclerView = "androidx.recyclerview:recyclerview:$recyclerViewVersion"
+    recyclerViewFastScroll = "me.zhanghai.android.fastscroll:library:$recyclerViewFastScrollVersion"
+    supportMedia = "androidx.media:media:$mediaCompatVersion"
+    constraintLayout = "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
+
+    rxJava = "io.reactivex.rxjava3:rxjava:$rxJavaVersion"
+    rxJavaExt = "com.github.akarnokd:rxjava3-extensions:$rxJavaExtVersion"
+    rxAndroid = "io.reactivex.rxjava3:rxandroid:$rxAndroidVersion"
+    rxPermissions = "com.github.tbruyelle:rxpermissions:$rxPermissionsVersion"
+
+    moxy = "com.github.moxy-community:moxy:$moxyVersion"
+    moxyCompiler = "com.github.moxy-community:moxy-compiler:$moxyVersion"
+    moxyAppcompat = "com.github.moxy-community:moxy-androidx:$moxyVersion"
+    moxyMaterial = "com.github.moxy-community:moxy-material:$moxyVersion"
+    moxyKtx = "com.github.moxy-community:moxy-ktx:$moxyVersion"
+
+    room = "androidx.room:room-runtime:$roomVersion"
+    roomCompiler = "androidx.room:room-compiler:$roomVersion"
+
+    dagger = "com.google.dagger:dagger:$daggerVersion"
+    daggerCompiler = "com.google.dagger:dagger-compiler:$daggerVersion"
+
+    slidr = "com.r0adkll:slidableactivity:$slidrVersion"
+
+    chipsLayoutManager = "com.beloo.widget:ChipsLayoutManager:$chipsLayoutManagerVersion"
+
+    exoPlayerCore = "com.google.android.exoplayer:exoplayer-core:$exoPlayerVersion"
+
+    room = "androidx.room:room-runtime:$roomVersion"
+    roomRx = "androidx.room:room-rxjava3:$roomVersion"
+    roomCompiler = "androidx.room:room-compiler:$roomVersion"
+    roomTest = "androidx.room:room-testing:$roomVersion"
+
+    glide = "com.github.bumptech.glide:glide:$glideVersion"
+    glideCompiler = "com.github.bumptech.glide:compiler:$glideVersion"
+
+    workManager = "androidx.work:work-runtime:$workManagerVersion"
+    workManagerRx = "androidx.work:work-rxjava3:$workManagerVersion"
+
+    jAudioTagger = "com.github.Anrimian:jaudiotagger:$jTaggerVersion"
+
+    //remote repos libraries
+    dropboxSdk = "com.dropbox.core:dropbox-core-sdk:$dropboxSdkVersion"
+    gDriveAuth = "com.google.android.gms:play-services-auth:$playServicesAuthVersion"
+    googleApi = "com.google.api-client:google-api-client-android:$googleApiVersion"
+    gDrive = "com.google.apis:google-api-services-drive:$gDriveVersion"
+
+    //develop
+    javaxAnnotation = "com.google.code.findbugs:jsr305:$javaxAnnotationVersion"
+
+    //tests
+    dexmaker = "com.google.dexmaker:dexmaker:${dexmakerVersion}"
+    dexmakerMockito = "com.google.dexmaker:dexmaker-mockito:${dexmakerVersion}"
+    junit5 = "org.junit.jupiter:junit-jupiter-api:${jUnit5Version}"
+    junit5Engine = "org.junit.jupiter:junit-jupiter-engine:${jUnit5Version}"
+    junit5Params = "org.junit.jupiter:junit-jupiter-params:${jUnit5Version}"
+    junit5PluginCore = "de.mannodermaus.junit5:android-test-core:${jUnit5PluginVersion}"
+    junit5PluginRunner = "de.mannodermaus.junit5:android-test-runner:${jUnit5PluginVersion}"
+    espresso = "androidx.test.espresso:espresso-core:$espressoVersion"
+    mockito = "org.mockito:mockito-core:${mockitoVersion}"
+    mockitoKt = "org.mockito.kotlin:mockito-kotlin:$mockitoKtVersion"
+    rules = "androidx.test:rules:$androidXTestVersion"
+    androidXTestRunner = "androidx.test:runner:$androidXTestVersion"
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextStyle.Time">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ButtonBorderlessStyle" parent="@style/BaseButtonBorderlessStyle">
+        <item name="android:minWidth">72dip</item>
+    </style>
+
+    <style name="ImageStyle.QueueItemImage" parent="ImageStyle.ItemImage">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+    </style>
+
+</resources>

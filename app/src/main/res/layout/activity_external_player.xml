@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/content_internal_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivMusicIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/folder"
+        android:layout_gravity="center|start"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="@dimen/content_vertical_margin"
+        android:layout_marginStart="@dimen/content_horizontal_margin"
+        app:shapeAppearance="@style/ShapeAppearance.CircleImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@drawable/ic_music_placeholder" />
+
+    <TextView
+        style="@style/TextStyle.Composition"
+        android:id="@+id/tvComposition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_marginStart="@dimen/content_horizontal_margin"
+        android:layout_marginEnd="@dimen/content_horizontal_margin"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="@id/ivMusicIcon"
+        app:layout_constraintStart_toEndOf="@id/ivMusicIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvCompositionAuthor"
+        tools:text="dsdsdsdsdsdsd"/>
+
+    <TextView
+        style="@style/TextStyle.Subtitle"
+        android:id="@+id/tvCompositionAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginTop="@dimen/content_vertical_spacing_margin"
+        android:layout_marginEnd="@dimen/content_horizontal_margin"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/tvComposition"
+        app:layout_constraintBottom_toBottomOf="@id/ivMusicIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvComposition"
+        tools:text="dsdsdsdsdsdsd"/>
+
+    <SeekBar
+        android:id="@+id/sbTrackState"
+        style="@style/SeekBarStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/content_spacing_margin"
+        android:paddingBottom="@dimen/content_spacing_margin"
+        android:layout_marginTop="@dimen/content_spacing_margin"
+        android:layout_marginLeft="1.5dp"
+        android:layout_marginRight="1.5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivMusicIcon"/>
+
+    <TextView
+        android:id="@+id/tvPlayedTime"
+        style="@style/TextStyle.Time"
+        android:gravity="center_vertical|start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/content_horizontal_margin"
+        app:layout_constraintTop_toBottomOf="@id/sbTrackState"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="00:11fdfdfdf"/>
+
+    <TextView
+        android:id="@+id/tvError"
+        style="@style/TextStyle.Error.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/content_spacing_margin"
+        android:layout_marginEnd="@dimen/content_spacing_margin"
+        android:layout_marginTop="-16dp"
+        app:layout_constraintTop_toBottomOf="@id/sbTrackState"
+        app:layout_constraintStart_toEndOf="@id/tvPlayedTime"
+        app:layout_constraintEnd_toStartOf="@id/tvTotalTime"
+        app:layout_constrainedWidth="true"
+        tools:text="layout_constraintTop_toBottomOflayout_constraintTop_toBottomOflayout_constraintTop_toBottomOf" />
+
+    <TextView
+        android:id="@+id/tvTotalTime"
+        style="@style/TextStyle.Time"
+        android:gravity="center_vertical|end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/content_horizontal_margin"
+        app:layout_constraintTop_toBottomOf="@id/sbTrackState"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="00:11fdfdffdfd" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvPlaybackSpeed"
+        style="@style/TextStyleSpeedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/content_horizontal_margin"
+        app:layout_constraintTop_toTopOf="@id/tvTotalTime"
+        app:layout_constraintBottom_toBottomOf="@id/tvTotalTime"
+        app:layout_constraintEnd_toStartOf="@id/tvTotalTime"/>
+
+    <ImageView
+        android:id="@+id/ivRewind"
+        style="@style/ButtonStyle.Main"
+        android:layout_marginEnd="@dimen/content_spacing_margin"
+        android:layout_marginStart="@dimen/content_spacing_margin"
+        android:contentDescription="@string/rewind"
+        app:layout_constraintEnd_toStartOf="@+id/ivPlayPause"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="@+id/ivPlayPause"
+        app:srcCompat="@drawable/ic_rewind" />
+
+    <ImageView
+        android:id="@+id/ivPlayPause"
+        style="@style/ButtonStyle.Main"
+        app:layout_constraintTop_toBottomOf="@id/tvPlayedTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_pause"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/ivFastForward"
+        style="@style/ButtonStyle.Main"
+        android:layout_marginEnd="@dimen/content_spacing_margin"
+        android:layout_marginStart="@dimen/content_spacing_margin"
+        android:contentDescription="@string/fast_forward"
+        app:layout_constraintStart_toEndOf="@+id/ivPlayPause"
+        app:layout_constraintTop_toTopOf="@+id/ivPlayPause"
+        app:srcCompat="@drawable/ic_fast_forward" />
+
+    <ImageView
+        android:id="@+id/ivRepeatMode"
+        style="@style/ButtonStyle"
+        android:contentDescription="@string/content_description_repeat_mode"
+        android:layout_marginEnd="@dimen/content_horizontal_margin"
+        app:layout_constraintTop_toTopOf="@id/ivPlayPause"
+        app:layout_constraintBottom_toBottomOf="@id/ivPlayPause"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:srcCompat="@drawable/ic_repeat" />
+
+    <View
+        android:id="@+id/divider_settings"
+        style="@style/Divider.Horizontal.Constraint"
+        android:layout_marginTop="@dimen/content_internal_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivPlayPause"/>
+
+    <CheckBox
+        style="@style/CheckboxStyle"
+        android:id="@+id/cbKeepPlayingAfterClose"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/keep_playing_after_window_close"
+        android:layout_marginTop="@dimen/content_internal_margin"
+        android:layout_marginEnd="@dimen/content_horizontal_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/ivMusicIcon"
+        app:layout_constraintTop_toBottomOf="@id/divider_settings"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
