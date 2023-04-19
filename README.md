@@ -1,3 +1,7 @@
+
+![Logo](https://user-images.githubusercontent.com/93087161/233119399-cac94673-521f-4935-8144-3b2e53d2ef99.png)
+
+
 # Skull Candy Music Player
 
 Introducing our revolutionary Music Player app, designed to bring your music listening experience to a whole new level. Our app provides you with an intuitive and user-friendly interface that allows you to easily access and organize your music collection.
@@ -10,6 +14,32 @@ Our app also provides advanced features such as an equalizer, which allows you t
 
 So, whether you're a music enthusiast or just someone who loves to listen to their favorite songs, our Music Player app is the perfect tool to help you enjoy your music to the fullest.
 
-![IMG-20221121-WA0005](https://user-images.githubusercontent.com/93087161/203332619-52b5bb4f-02b6-40a4-bf52-f361421b9d99.jpg)
-![IMG-20221121-WA0001](https://user-images.githubusercontent.com/93087161/203382401-5a60bb81-c479-46a3-95f8-094f4f527d0e.jpg)
+
+## Tech Stack
+
+**Languages:** Java, Kotlin, XML
+
+
+
+
+## Features
+
+- Create Playlists
+- Equalizer
+- Cross platform
+- Different Themes
+
+
+## Installation
+
+Open Andriod Studio and Build the App!
+    
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+![App Screenshot](https://user-images.githubusercontent.com/93087161/233145389-a866712f-5fae-4f40-93d0-6b94db7589ec.jpg)
+![App Screenshot](https://user-images.githubusercontent.com/93087161/233145334-8444c97e-0be4-4b2a-94f6-c73e894ae741.jpg)
+![3](https://user-images.githubusercontent.com/93087161/233145369-7e4f3b13-8120-4786-b91b-3178708c7e28.jpg)
+![4](https://user-images.githubusercontent.com/93087161/233145380-b569fcef-14cf-46bc-bc37-b3e8364228e5.jpg)
 
