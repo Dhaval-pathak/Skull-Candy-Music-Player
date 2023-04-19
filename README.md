@@ -36,7 +36,7 @@ Open Andriod Studio and Build the App!
     
 # Screenshots
 
-<img src="https://user-images.githubusercontent.com/93087161/233145389-a866712f-5fae-4f40-93d0-6b94db7589ec.jpg" width="48">
+<img src="https://user-images.githubusercontent.com/93087161/233145389-a866712f-5fae-4f40-93d0-6b94db7589ec.jpg" width="100">
 ![App Screenshot](https://user-images.githubusercontent.com/93087161/233145389-a866712f-5fae-4f40-93d0-6b94db7589ec.jpg=250x250)
 ![App Screenshot](https://user-images.githubusercontent.com/93087161/233145334-8444c97e-0be4-4b2a-94f6-c73e894ae741.jpg | width=100)
 ![3](https://user-images.githubusercontent.com/93087161/233145369-7e4f3b13-8120-4786-b91b-3178708c7e28.jpg)
