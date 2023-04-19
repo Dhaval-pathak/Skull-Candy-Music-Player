@@ -1,5 +1,5 @@
 
-![Logo](https://user-images.githubusercontent.com/93087161/233119399-cac94673-521f-4935-8144-3b2e53d2ef99.png)
+<img src="https://user-images.githubusercontent.com/93087161/233119399-cac94673-521f-4935-8144-3b2e53d2ef99.png" width="68">
 
 
 # Skull Candy Music Player
